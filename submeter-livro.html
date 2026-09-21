@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submeter livro | Kilunji — Editora e Livraria</title>
+<meta name="description" content="Tem um livro? Submeta os detalhes à Kilunji para publicação ou venda. Envie o ficheiro ou um link e a nossa equipa entra em contacto.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Libre+Franklin:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <img class="brand-logo" src="assets/img/logo-full.png" alt="Kilunji — Editora e Livraria — lendo com alma">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="submeter-livro.html" class="active">Submeter livro</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li class="mobile-cta"><a href="https://wa.me/244923579737" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp</a></li>
+    </ul>
+    <a class="nav-cta" href="https://wa.me/244923579737" target="_blank" rel="noopener">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+    </a>
+    <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+</header>
+
+<main>
+
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="breadcrumb"><a href="index.html">Início</a> / Submeter livro</p>
+      <span class="kicker">tenho um livro</span>
+      <h1>Submeta o seu livro à Kilunji</h1>
+      <p>Escreveu um livro e procura uma editora, ou já o tem publicado e quer vendê-lo na nossa livraria? Conte-nos mais através do formulário abaixo — é o primeiro passo para começarmos a conversar.</p>
+    </div>
+  </div>
+
+  <!-- COMO FUNCIONA -->
+  <section style="padding-bottom:40px;">
+    <div class="wrap">
+      <div class="steps-grid">
+        <div class="step">
+          <span class="step-num">PASSO 1</span>
+          <i class="fa-solid fa-pen-nib"></i>
+          <h3>Preencha o formulário</h3>
+          <p>Indique o título, autor(es), género e um breve resumo do livro.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">PASSO 2</span>
+          <i class="fa-solid fa-file-arrow-up"></i>
+          <h3>Envie o livro</h3>
+          <p>Anexe o ficheiro (PDF ou outro formato) ou cole um link do Google Drive, OneDrive ou similar.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">PASSO 3</span>
+          <i class="fa-solid fa-comments"></i>
+          <h3>Aguarde o nosso contacto</h3>
+          <p>A nossa equipa analisa a submissão e entra em contacto pelo email ou telefone indicados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO -->
+  <section style="padding-top:20px;">
+    <div class="wrap">
+      <div class="form-card">
+
+        <div class="form-note">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>Este formulário serve tanto para quem procura <strong>publicar</strong> um livro inédito através da nossa editora, como para quem já tem um livro publicado e quer <strong>vendê-lo</strong> na nossa livraria. Preencha da forma que fizer mais sentido para o seu caso.</span>
+        </div>
+
+        <form action="https://formsubmit.co/wilsonvicentelucas@gmail.com" method="POST" enctype="multipart/form-data">
+
+          <!-- Campos de configuração do FormSubmit -->
+          <input type="hidden" name="_subject" value="Nova submissão de livro — Kilunji">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="obrigado.html">
+          <!-- Campo-armadilha anti-spam: deve ficar sempre vazio -->
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off">
+
+          <fieldset class="form-section">
+            <legend>Sobre o livro</legend>
+
+            <div class="field">
+              <label for="titulo_livro">Título do livro <span class="req">*</span></label>
+              <input type="text" id="titulo_livro" name="Título do livro" required placeholder="Ex: Psicologia Positiva: Ciência para Todos">
+            </div>
+
+            <div class="field">
+              <label for="autores">Autor(es) <span class="req">*</span></label>
+              <input type="text" id="autores" name="Autor(es)" required placeholder="Ex: Paulo Alves">
+              <span class="helper">Se houver mais do que um autor, separe os nomes por vírgula.</span>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="genero">Género / Categoria <span class="req">*</span></label>
+                <select id="genero" name="Género" required>
+                  <option value="" disabled selected>Escolha uma opção</option>
+                  <option>Ficção</option>
+                  <option>Não-ficção</option>
+                  <option>Psicologia</option>
+                  <option>Ciências sociais</option>
+                  <option>Poesia</option>
+                  <option>Infantil / Juvenil</option>
+                  <option>Académico / Científico</option>
+                  <option>Autoajuda / Desenvolvimento pessoal</option>
+                  <option>Biografia / Memórias</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="data_lancamento">Data de lançamento</label>
+                <input type="date" id="data_lancamento" name="Data de lançamento">
+                <span class="helper">Já lançado ou data prevista, se ainda não publicado.</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="sinopse">Sinopse / Resumo <span class="req">*</span></label>
+              <textarea id="sinopse" name="Sinopse" required placeholder="Um breve resumo do livro (3 a 10 linhas)"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend>Enviar o livro</legend>
+
+            <div class="method-toggle" role="radiogroup" aria-label="Como pretende enviar o livro">
+              <label class="method-option">
+                <input type="radio" name="metodo_envio" value="ficheiro" checked>
+                <i class="fa-solid fa-file-arrow-up"></i> Anexar ficheiro
+              </label>
+              <label class="method-option">
+                <input type="radio" name="metodo_envio" value="link">
+                <i class="fa-solid fa-link"></i> Enviar link
+              </label>
+            </div>
+
+            <div id="panel-ficheiro" class="method-panel">
+              <div class="field">
+                <div class="file-drop" id="fileDrop">
+                  <i class="fa-solid fa-cloud-arrow-up"></i>
+                  <span>Clique para escolher o ficheiro do livro</span>
+                  <input type="file" id="livro_ficheiro" name="Ficheiro do livro" accept=".pdf,.doc,.docx,.odt,.rtf,.epub">
+                </div>
+                <div class="file-name" id="fileName"></div>
+                <span class="helper">Formatos aceites: PDF, DOC, DOCX, ODT, RTF ou EPUB. Tamanho máximo recomendado: 15&nbsp;MB.</span>
+              </div>
+            </div>
+
+            <div id="panel-link" class="method-panel">
+              <div class="field">
+                <label for="livro_link">Link do livro</label>
+                <input type="url" id="livro_link" name="Link do livro" placeholder="https://drive.google.com/... ou https://onedrive.live.com/...">
+                <span class="helper">Google Drive, OneDrive, Dropbox ou outro serviço — confirme que o link tem permissão de visualização/transferência.</span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend>Os seus dados de contacto</legend>
+
+            <div class="field">
+              <label for="contacto_nome">Nome <span class="req">*</span></label>
+              <input type="text" id="contacto_nome" name="Nome de contacto" required placeholder="O seu nome">
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="contacto_email">Email <span class="req">*</span></label>
+                <input type="email" id="contacto_email" name="Email de contacto" required placeholder="nome@email.com">
+              </div>
+              <div class="field">
+                <label for="contacto_telefone">Telefone / WhatsApp</label>
+                <input type="tel" id="contacto_telefone" name="Telefone de contacto" placeholder="9XX XXX XXX">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="mensagem">Mensagem adicional</label>
+              <textarea id="mensagem" name="Mensagem adicional" placeholder="Alguma informação extra que queira partilhar connosco (opcional)"></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="submit-btn"><i class="fa-solid fa-paper-plane"></i> Enviar submissão</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/img/logo-full.png" alt="Kilunji — Editora e Livraria">
+        <p>Editora e livraria generalista na Maianga, Luanda. Livros para pensar melhor e ler com alma.</p>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="submeter-livro.html">Submeter livro</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="tel:+244923579737"><i class="fa-solid fa-phone"></i> 923 579 737</a></li>
+          <li><a href="https://wa.me/244923579737" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+          <li><a href="https://www.facebook.com/share/19PNBQKD8v/?mibextid=wwXIfr" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Kilunji — Editora e Livraria. Maianga, Luanda.</span>
+      <span>Feito com atenção, para quem lê.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
