@@ -88,10 +88,10 @@ header{
     background:var(--paper);
     flex-direction:column; align-items:flex-start; gap:0;
     border-bottom:1px solid var(--line);
-    max-height:0; overflow:hidden;
+    max-height:0; overflow-y:auto;
     transition:max-height .25s ease;
   }
-  .nav-links.open{max-height:360px;}
+  .nav-links.open{max-height:calc(100vh - 73px);}
   .nav-links li{width:100%;}
   .nav-links a{display:block; padding:14px 28px; width:100%; border-bottom:1px solid var(--line);}
   .nav-cta{display:none;}
@@ -279,3 +279,125 @@ footer a:hover{color:var(--gold);}
   .sobre-mark{padding-top:0; margin-bottom:8px;}
   .sobre-mark img{width:140px;}
 }
+
+/* ============ COMO FUNCIONA (steps) ============ */
+.steps-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-top:1px solid var(--line); border-left:1px solid var(--line);}
+.step{padding:32px 30px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); position:relative;}
+.step-num{
+  font-family:'Fraunces', serif; font-size:0.85rem; color:var(--wine); font-weight:600;
+  display:inline-block; margin-bottom:14px; letter-spacing:0.5px;
+}
+.step i{font-size:1.4rem; color:var(--bronze); margin-bottom:14px; display:block;}
+.step h3{font-size:1.08rem; margin-bottom:8px;}
+.step p{color:var(--ink-soft); font-size:0.94rem;}
+@media (max-width: 760px){
+  .steps-grid{grid-template-columns:1fr;}
+}
+
+/* ============ FORMULÁRIO — Submeter livro ============ */
+.form-card{
+  background:var(--paper-deep);
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:44px;
+  max-width:760px;
+}
+@media (max-width:600px){
+  .form-card{padding:28px 22px;}
+}
+.form-intro{margin-bottom:32px;}
+.form-intro p{color:var(--ink-soft); font-size:0.98rem; margin-top:8px;}
+
+fieldset{border:none; margin:0; padding:0;}
+legend{
+  font-family:'Fraunces', serif; font-size:1.15rem; font-weight:600; color:var(--ink);
+  padding:0; margin-bottom:18px; width:100%; border-bottom:1px solid var(--line); padding-bottom:12px;
+}
+.form-section{margin-bottom:38px;}
+.form-section:last-of-type{margin-bottom:0;}
+
+.field{margin-bottom:22px;}
+.field label{
+  display:block; font-weight:600; font-size:0.94rem; color:var(--ink); margin-bottom:6px;
+}
+.field label .req{color:var(--wine); margin-left:2px;}
+.field .helper{display:block; font-size:0.84rem; color:var(--ink-soft); margin-top:6px; font-weight:400;}
+
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="tel"],
+.field input[type="date"],
+.field input[type="url"],
+.field select,
+.field textarea{
+  width:100%;
+  font-family:'Libre Franklin', sans-serif;
+  font-size:0.98rem;
+  color:var(--ink);
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:4px;
+  padding:12px 14px;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  outline:none;
+  border-color:var(--bronze);
+  box-shadow:0 0 0 3px rgba(168,103,47,0.15);
+}
+.field textarea{resize:vertical; min-height:110px; font-family:inherit;}
+
+.field-row{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+@media (max-width:600px){
+  .field-row{grid-template-columns:1fr;}
+}
+
+.method-toggle{display:flex; gap:14px; margin-bottom:20px; flex-wrap:wrap;}
+.method-option{
+  flex:1; min-width:180px;
+  display:flex; align-items:center; gap:10px;
+  border:1px solid var(--line); border-radius:4px; padding:14px 16px;
+  cursor:pointer; background:var(--paper); font-size:0.94rem; font-weight:500;
+}
+.method-option input{margin:0; accent-color:var(--wine);}
+.method-option i{color:var(--bronze);}
+.method-option.checked{border-color:var(--bronze); background:#fbf3e6;}
+
+.method-panel{display:none;}
+.method-panel.visible{display:block;}
+
+.file-drop{
+  border:1.5px dashed var(--bronze); border-radius:6px; padding:26px 18px;
+  text-align:center; background:var(--paper); cursor:pointer;
+}
+.file-drop i{font-size:1.6rem; color:var(--bronze); margin-bottom:10px; display:block;}
+.file-drop span{font-size:0.92rem; color:var(--ink-soft); display:block;}
+.file-drop input[type="file"]{display:none;}
+.file-name{margin-top:12px; font-size:0.9rem; font-weight:600; color:var(--wine-deep);}
+
+.form-note{
+  display:flex; gap:12px; align-items:flex-start;
+  background:#fbf3e6; border:1px solid var(--line); border-radius:6px;
+  padding:16px 18px; margin-bottom:30px; font-size:0.9rem; color:var(--ink-soft);
+}
+.form-note i{color:var(--bronze); margin-top:2px;}
+
+.hp-field{position:absolute; left:-9999px; opacity:0; height:0; width:0; overflow:hidden;}
+
+.submit-btn{
+  display:inline-flex; align-items:center; gap:10px;
+  background:var(--wine); color:#f6ede1; border:none; cursor:pointer;
+  padding:15px 30px; border-radius:3px; font-weight:600; font-size:1rem;
+  font-family:'Libre Franklin', sans-serif;
+}
+.submit-btn:hover{background:var(--wine-deep);}
+
+/* ============ PÁGINA DE OBRIGADO ============ */
+.success-box{
+  max-width:560px; text-align:center; margin:0 auto;
+  padding:60px 30px;
+}
+.success-box i{font-size:2.6rem; color:var(--wine); margin-bottom:20px; display:block;}
+.success-box h1{margin-bottom:14px;}
+.success-box p{color:var(--ink-soft); font-size:1.05rem; margin-bottom:30px;}

@@ -31,4 +31,56 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+
+  /* ---- Formulário "Submeter livro": alternar entre ficheiro e link ---- */
+  var methodRadios = document.querySelectorAll('input[name="metodo_envio"]');
+  if (methodRadios.length) {
+    var panelFile = document.getElementById('panel-ficheiro');
+    var panelLink = document.getElementById('panel-link');
+    var inputFile = document.getElementById('livro_ficheiro');
+    var inputLink = document.getElementById('livro_link');
+    var options = document.querySelectorAll('.method-option');
+
+    function updateMethod() {
+      var selected = document.querySelector('input[name="metodo_envio"]:checked').value;
+      var isFile = selected === 'ficheiro';
+
+      panelFile.classList.toggle('visible', isFile);
+      panelLink.classList.toggle('visible', !isFile);
+
+      if (inputFile) inputFile.required = isFile;
+      if (inputLink) inputLink.required = !isFile;
+
+      options.forEach(function (opt) {
+        var radio = opt.querySelector('input[type="radio"]');
+        opt.classList.toggle('checked', radio.checked);
+      });
+    }
+
+    methodRadios.forEach(function (radio) {
+      radio.addEventListener('change', updateMethod);
+    });
+    updateMethod();
+  }
+
+  /* ---- Mostrar nome do ficheiro seleccionado ---- */
+  var fileInput = document.getElementById('livro_ficheiro');
+  var fileNameEl = document.getElementById('fileName');
+  if (fileInput && fileNameEl) {
+    fileInput.addEventListener('change', function () {
+      if (fileInput.files && fileInput.files.length > 0) {
+        fileNameEl.textContent = 'Ficheiro seleccionado: ' + fileInput.files[0].name;
+      } else {
+        fileNameEl.textContent = '';
+      }
+    });
+  }
+
+  /* ---- Clique na área de drop abre o selector de ficheiro ---- */
+  var fileDrop = document.getElementById('fileDrop');
+  if (fileDrop && fileInput) {
+    fileDrop.addEventListener('click', function () {
+      fileInput.click();
+    });
+  }
 });
