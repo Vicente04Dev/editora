@@ -3,8 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Serviços | Kilunji — Editora e Livraria</title>
-<meta name="description" content="Livraria e editora Kilunji: venda de livros na Maianga, Luanda, e edição de obras de autores angolanos.">
+<title>Serviços | Kilunji Editora</title>
+<meta name="description" content="Edição e publicação, revisão e tradução, design e paginação, consultoria editorial, promoção, estúdio, apetrechamento de bibliotecas e distribuição em Angola. Peça o seu orçamento.">
+<meta name="theme-color" content="#221a12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kilunji Editora">
+<meta property="og:locale" content="pt_AO">
+<meta property="og:title" content="Serviços | Kilunji Editora">
+<meta property="og:description" content="Edição e publicação, revisão e tradução, design e paginação, consultoria editorial, promoção, estúdio, apetrechamento de bibliotecas e distribuição em Angola. Peça o seu orçamento.">
+<meta property="og:image" content="assets/img/logo-icon.png">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,116 +20,341 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-<header>
-  <nav class="nav">
-    <a href="index.html" class="brand">
-      <img class="brand-logo" src="assets/img/logo-full.png" alt="Kilunji — Editora e Livraria — lendo com alma">
+<a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+<header class="site-header">
+  <nav class="nav" aria-label="Menu principal">
+    <a href="index.html" class="brand" aria-label="Kilunji Editora — página inicial">
+      <img class="brand-icon" src="assets/img/logo-icon.png" alt="" width="42" height="38">
+      <span class="brand-text"><b>Kilunji</b><small>Editora · lendo com alma</small></span>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="catalogo.html">Catálogo</a></li>
-      <li><a href="servicos.html" class="active">Serviços</a></li>
-      <li><a href="submeter-livro.html">Submeter livro</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li class="mobile-cta"><a href="https://wa.me/244923579737" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+      <li><a href="sobre.html">Quem Somos</a></li>
+      <li><a href="servicos.html" class="active" aria-current="page">Serviços</a></li>
+      <li><a href="autores.html">Autores</a></li>
+      <li class="has-sub">
+        <button type="button" class="sub-toggle" aria-expanded="false" aria-controls="sub-livros">Livros <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+        <ul class="sub-menu" id="sub-livros">
+          <li><a href="lancamentos.html"><i class="fa-solid fa-star" aria-hidden="true"></i><span>Lançamentos<small>Novidades e destaques</small></span></a></li>
+          <li><a href="catalogo.html"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Catálogo completo<small>Todos os títulos Kilunji</small></span></a></li>
+          <li><a href="livrarias.html"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i><span>Livrarias e pontos de venda<small>Books and Coffee e parceiros</small></span></a></li>
+        </ul>
+      </li>
+      <li><a href="programa-o-livro.html">O Livro</a></li>
+      <li><a href="revista.html">Revista</a></li>
+      <li><a href="contacto.html">Contactos</a></li>
+      <li class="mobile-cta"><a href="submeter-livro.html"><i class="fa-solid fa-feather-pointer" aria-hidden="true"></i> Publicar o meu livro</a></li>
     </ul>
-    <a class="nav-cta" href="https://wa.me/244923579737" target="_blank" rel="noopener">
-      <i class="fa-brands fa-whatsapp"></i> WhatsApp
-    </a>
-    <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
-      <i class="fa-solid fa-bars"></i>
+    <a class="nav-cta" href="submeter-livro.html"><i class="fa-solid fa-feather-pointer" aria-hidden="true"></i> Publicar o meu livro</a>
+    <button type="button" class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
     </button>
   </nav>
 </header>
 
-<main>
+<main id="conteudo">
 
   <div class="page-hero on-dark">
     <div class="wrap">
       <p class="breadcrumb"><a href="index.html">Início</a> / Serviços</p>
-      <span class="kicker">o que fazemos</span>
-      <h1>Livraria e editora, sob o mesmo tecto</h1>
-      <p>Duas frentes que se apoiam mutuamente: vendemos livros e também os fazemos nascer.</p>
+      <span class="kicker">os nossos serviços</span>
+      <h1>Do manuscrito à estante — tratamos de tudo.</h1>
+      <p>Seja o seu primeiro livro ou a revista da sua instituição, a Kilunji oferece soluções editoriais completas, feitas à medida de cada projecto.</p>
+      <div class="hero-actions">
+        <a class="btn btn-light" href="#orcamento">Pedir orçamento</a>
+        <a class="btn btn-ghost-light" href="https://wa.me/244923579737" data-wa-text="Olá, Kilunji! Gostaria de falar com um editor sobre um projecto."><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Falar com um editor</a>
+      </div>
     </div>
   </div>
 
-  <section class="servicos" style="padding-top:0;">
-    <div class="wrap" style="padding:0;">
-      <div class="serv-grid">
-        <div class="serv-col">
-          <i class="fa-solid fa-store serv-icon"></i>
-          <h3>Livraria</h3>
-          <p>Um espaço físico na Maianga, em Luanda, com um catálogo generalista pensado para todo o tipo de leitor.</p>
+  <section class="section-dark" style="padding-top:20px;">
+    <div class="wrap">
+      <div class="svc-grid">
+        <div class="svc" id="edicao">
+          <div class="svc-head"><i class="fa-solid fa-book" aria-hidden="true"></i><h3>Edição e Publicação</h3></div>
           <ul>
-            <li><i class="fa-solid fa-check"></i>Livros de psicologia e ciências sociais</li>
-            <li><i class="fa-solid fa-check"></i>Literatura e obras de referência</li>
-            <li><i class="fa-solid fa-check"></i>Encomendas por WhatsApp e atendimento na loja</li>
+            <li>Livros, revistas, catálogos e brochuras</li>
+            <li>Edições em áudio e vídeo</li>
+            <li>Depósito legal e atribuição de ISBN</li>
           </ul>
         </div>
-        <div class="serv-col">
-          <i class="fa-solid fa-feather-pointer serv-icon"></i>
-          <h3>Editora</h3>
-          <p>Trabalhamos com autores angolanos e especialistas para transformar manuscritos em livros com edição cuidada.</p>
+        <div class="svc" id="revisao">
+          <div class="svc-head"><i class="fa-solid fa-spell-check" aria-hidden="true"></i><h3>Revisão e Tradução</h3></div>
           <ul>
-            <li><i class="fa-solid fa-check"></i>Edição, revisão e produção do livro</li>
-            <li><i class="fa-solid fa-check"></i>Distribuição através da nossa livraria e rede de parceiros</li>
-            <li><i class="fa-solid fa-check"></i>Acompanhamento próximo ao autor, do texto à capa</li>
+            <li>Revisão linguística e gramatical</li>
+            <li>Tradução de livros</li>
+            <li>Tradução e reconhecimento de documentos oficiais</li>
+          </ul>
+        </div>
+        <div class="svc" id="design">
+          <div class="svc-head"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i><h3>Design e Paginação</h3></div>
+          <ul>
+            <li>Paginação e diagramação profissional</li>
+            <li>Preparação de ficheiros para impressão e formato digital</li>
+          </ul>
+        </div>
+        <div class="svc" id="consultoria">
+          <div class="svc-head"><i class="fa-solid fa-compass" aria-hidden="true"></i><h3>Consultoria Editorial</h3></div>
+          <ul>
+            <li>Orientação ao autor em todas as fases</li>
+            <li>Ghostwriting: escrevemos a sua história consigo</li>
+          </ul>
+        </div>
+        <div class="svc" id="promocao">
+          <div class="svc-head"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i><h3>Promoção e Comunicação</h3></div>
+          <ul>
+            <li>Conteúdos publicitários para livros</li>
+            <li>Gravação de spots publicitários em áudio e vídeo</li>
+          </ul>
+        </div>
+        <div class="svc" id="estudio">
+          <div class="svc-head"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i><h3>Estúdio e Gestão Artística</h3></div>
+          <ul>
+            <li>Estúdio musical</li>
+            <li>Gestão de carreira artística</li>
+          </ul>
+        </div>
+        <div class="svc" id="bibliotecas">
+          <div class="svc-head"><i class="fa-solid fa-building-columns" aria-hidden="true"></i><h3>Bibliotecas e Livrarias</h3></div>
+          <ul>
+            <li>Apetrechamento e decoração de bibliotecas e livrarias, físicas e digitais</li>
+          </ul>
+        </div>
+        <div class="svc" id="distribuicao">
+          <div class="svc-head"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i><h3>Venda e Distribuição</h3></div>
+          <ul>
+            <li>Distribuição de livros e revistas em todo o país</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- COMO TRABALHAMOS -->
   <section>
     <div class="wrap">
       <div class="section-head">
-        <span class="kicker">quer publicar connosco?</span>
-        <h2>Tem um livro pronto para publicar ou vender?</h2>
-        <p>Submeta os detalhes do seu livro através do nosso formulário e a nossa equipa entra em contacto consigo.</p>
+        <span class="kicker">passo a passo</span>
+        <h2>Como trabalhamos</h2>
+        <p>Um processo claro, em que cada decisão importante passa pela sua aprovação.</p>
       </div>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="submeter-livro.html"><i class="fa-solid fa-file-arrow-up"></i> Submeter o meu livro</a>
-        <a class="btn btn-ghost" href="contacto.html">Ver todos os contactos</a>
+      <div class="steps-grid cols-4">
+        <div class="step">
+          <span class="step-num">ETAPA 1</span>
+          <i class="fa-solid fa-comments" aria-hidden="true"></i>
+          <h3>Conversa inicial</h3>
+          <p>Ouvimos a sua ideia, conhecemos o manuscrito e definimos objectivos.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">ETAPA 2</span>
+          <i class="fa-solid fa-file-invoice" aria-hidden="true"></i>
+          <h3>Proposta à medida</h3>
+          <p>Enviamos um orçamento claro, com serviços, prazos e valores.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">ETAPA 3</span>
+          <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
+          <h3>Produção editorial</h3>
+          <p>Revisão, paginação, capa, ISBN e depósito legal — sempre com a sua aprovação.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">ETAPA 4</span>
+          <i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i>
+          <h3>Lançamento e venda</h3>
+          <p>Preparamos o lançamento, a promoção e a distribuição pelos nossos pontos de venda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PEDIR ORÇAMENTO -->
+  <section class="section-alt" id="orcamento">
+    <div class="wrap contacto-grid">
+      <div>
+        <span class="kicker">orçamento sem compromisso</span>
+        <h2 style="font-size:clamp(1.8rem,3vw,2.4rem); margin-top:6px;">Conte-nos o seu projecto</h2>
+        <p class="lead" style="margin-top:16px;">Indique o que precisa e enviamos uma proposta à medida, com serviços, prazos e valores.</p>
+        <div style="margin-top:32px;">
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></div>
+            <div><h4>Prefere conversar?</h4><a href="https://wa.me/244923579737" data-wa-text="Olá, Kilunji! Gostaria de pedir um orçamento.">Fale com um editor pelo WhatsApp</a></div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+            <div><h4>Telefone</h4><a href="tel:+244923579737">+244 923 579 737</a></div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-file-arrow-up" aria-hidden="true"></i></div>
+            <div><h4>Já tem o manuscrito pronto?</h4><a href="submeter-livro.html">Submeta-o directamente para avaliação</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card flush" style="background:var(--paper);">
+        <form action="https://formsubmit.co/wilsonvicentelucas@gmail.com" method="POST" data-next="obrigado.html?tipo=orcamento">
+          <input type="hidden" name="_subject" value="Novo pedido de orçamento — Kilunji">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="obrigado.html?tipo=orcamento">
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <fieldset class="form-section">
+            <legend>O seu projecto</legend>
+            <div class="field-row">
+              <div class="field">
+                <label for="orc_tipo">Tipo de projecto <span class="req">*</span></label>
+                <select id="orc_tipo" name="Tipo de projecto" required>
+                  <option value="" disabled selected>Escolha uma opção</option>
+                  <option>Livro</option>
+                  <option>Revista</option>
+                  <option>Catálogo / brochura</option>
+                  <option>Edição em áudio ou vídeo</option>
+                  <option>Tradução de documentos</option>
+                  <option>Biblioteca / livraria</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="orc_paginas">N.º aproximado de páginas</label>
+                <input type="number" id="orc_paginas" name="Número de páginas" min="1" inputmode="numeric" placeholder="Ex: 180">
+              </div>
+            </div>
+
+            <div class="field">
+              <span class="label">Serviços pretendidos</span>
+              <div class="check-grid">
+                <label class="check"><input type="checkbox" name="Serviços[]" value="Edição e Publicação"> Edição e Publicação</label>
+                <label class="check"><input type="checkbox" name="Serviços[]" value="Revisão e Tradução"> Revisão e Tradução</label>
+                <label class="check"><input type="checkbox" name="Serviços[]" value="Design e Paginação"> Design e Paginação</label>
+                <label class="check"><input type="checkbox" name="Serviços[]" value="Consultoria Editorial / Ghostwriting"> Consultoria / Ghostwriting</label>
+                <label class="check"><input type="checkbox" name="Serviços[]" value="ISBN e Depósito Legal"> ISBN e Depósito Legal</label>
+                <label class="check"><input type="checkbox" name="Serviços[]" value="Promoção e Comunicação"> Promoção e Comunicação</label>
+                <label class="check"><input type="checkbox" name="Serviços[]" value="Estúdio e Gestão Artística"> Estúdio e Gestão Artística</label>
+                <label class="check"><input type="checkbox" name="Serviços[]" value="Venda e Distribuição"> Venda e Distribuição</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="orc_prazo">Prazo desejado</label>
+              <select id="orc_prazo" name="Prazo desejado">
+                <option>Sem prazo definido</option>
+                <option>Até 1 mês</option>
+                <option>1 a 3 meses</option>
+                <option>3 a 6 meses</option>
+                <option>Mais de 6 meses</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="orc_descricao">Descreva o projecto <span class="req">*</span></label>
+              <textarea id="orc_descricao" name="Descrição do projecto" required placeholder="Tema da obra, público, tiragem pretendida, se já tem capa ou revisão…"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend>Os seus dados</legend>
+            <div class="field">
+              <label for="orc_nome">Nome / instituição <span class="req">*</span></label>
+              <input type="text" id="orc_nome" name="Nome" required autocomplete="name">
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="orc_email">E-mail <span class="req">*</span></label>
+                <input type="email" id="orc_email" name="E-mail" required autocomplete="email" placeholder="nome@email.com">
+              </div>
+              <div class="field">
+                <label for="orc_tel">Telefone / WhatsApp</label>
+                <input type="tel" id="orc_tel" name="Telefone" autocomplete="tel" placeholder="9XX XXX XXX">
+              </div>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="submit-btn"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Pedir orçamento</button>
+          <p class="form-privacy">Os seus dados são usados apenas para responder a este pedido.</p>
+        </form>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer>
+<footer class="site-footer">
   <div class="wrap">
+
+    <div class="newsletter" id="novidades">
+      <div class="newsletter-inner">
+        <div>
+          <h2>Receba as novidades da Kilunji</h2>
+          <p>Lançamentos, sessões de autógrafos e convidados do programa O Livro — directamente no seu e-mail.</p>
+        </div>
+        <form action="https://formsubmit.co/wilsonvicentelucas@gmail.com" method="POST" data-next="obrigado.html?tipo=novidades">
+          <input type="hidden" name="_subject" value="Nova subscrição de novidades — Kilunji">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="obrigado.html?tipo=novidades">
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label for="newsletterEmail" class="visually-hidden">O seu e-mail</label>
+          <input type="email" id="newsletterEmail" name="E-mail para novidades" required placeholder="O seu e-mail">
+          <button type="submit">Subscrever</button>
+        </form>
+      </div>
+    </div>
+
     <div class="foot-grid">
       <div class="foot-brand">
-        <img src="assets/img/logo-full.png" alt="Kilunji — Editora e Livraria">
-        <p>Editora e livraria generalista na Maianga, Luanda. Livros para pensar melhor e ler com alma.</p>
+        <a href="index.html" class="brand" aria-label="Kilunji Editora — página inicial">
+          <img class="brand-icon" src="assets/img/logo-icon.png" alt="" width="42" height="38">
+          <span class="brand-text"><b>Kilunji</b><small>Editora · lendo com alma</small></span>
+        </a>
+        <p>Editora generalista angolana. Desde 2015, transformamos ideias em livros — do primeiro manuscrito até às mãos do leitor.</p>
+        <div class="foot-social">
+          <a href="https://www.facebook.com/share/19PNBQKD8v/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook da Kilunji"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/244923579737" target="_blank" rel="noopener" aria-label="WhatsApp da Kilunji"><i class="fa-brands fa-whatsapp"></i></a>
+          <!-- Acrescentar quando os links estiverem disponíveis:
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram da Kilunji"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn da Kilunji"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Programa O Livro no YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Programa O Livro no Spotify"><i class="fa-brands fa-spotify"></i></a>
+          -->
+        </div>
       </div>
       <div>
-        <h5>Navegação</h5>
+        <h5>A Editora</h5>
         <ul>
-          <li><a href="sobre.html">Sobre nós</a></li>
-          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="sobre.html">Quem Somos</a></li>
           <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="submeter-livro.html">Submeter livro</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="autores.html">Autores</a></li>
+          <li><a href="revista.html">Revista Científica</a></li>
+          <li><a href="submeter-livro.html">Submeter manuscrito</a></li>
         </ul>
       </div>
       <div>
-        <h5>Contacto</h5>
+        <h5>Livros</h5>
         <ul>
-          <li><a href="tel:+244923579737"><i class="fa-solid fa-phone"></i> 923 579 737</a></li>
+          <li><a href="lancamentos.html">Lançamentos</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="livrarias.html">Livrarias e pontos de venda</a></li>
+          <li><a href="programa-o-livro.html">Programa O Livro</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contactos</h5>
+        <ul class="contact-list">
+          <li><a href="tel:+244923579737"><i class="fa-solid fa-phone"></i> +244 923 579 737</a></li>
           <li><a href="https://wa.me/244923579737" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
-          <li><a href="https://www.facebook.com/share/19PNBQKD8v/?mibextid=wwXIfr" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+          <li><a href="contacto.html#mapa"><i class="fa-solid fa-location-dot"></i> Rua Ho Chi Minh, Faculdade de Ciências Sociais da UAN, Luanda</a></li>
+          <li><a href="contacto.html"><i class="fa-regular fa-clock"></i> Seg.–Sex., 9h00–19h00</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span id="year"></span> Kilunji — Editora e Livraria. Maianga, Luanda.</span>
-      <span>Feito com atenção, para quem lê.</span>
+      <span>© <span data-year>2026</span> Kilunji Editora. Todos os direitos reservados.</span>
+      <span>Lendo com alma.</span>
     </div>
   </div>
 </footer>
+
+<a class="wa-float" href="https://wa.me/244923579737" target="_blank" rel="noopener" aria-label="Falar connosco pelo WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
 <script src="assets/js/main.js" defer></script>
 </body>

@@ -3,8 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sobre nós | Kilunji — Editora e Livraria</title>
-<meta name="description" content="Conheça a Kilunji: editora e livraria generalista na Maianga, Luanda, e a ideia de mente e raiz por trás do nosso símbolo.">
+<title>Quem Somos | Kilunji Editora</title>
+<meta name="description" content="Editora generalista angolana desde 2015. Conheça a missão, a visão, os valores e os parceiros académicos da Kilunji.">
+<meta name="theme-color" content="#221a12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kilunji Editora">
+<meta property="og:locale" content="pt_AO">
+<meta property="og:title" content="Quem Somos | Kilunji Editora">
+<meta property="og:description" content="Editora generalista angolana desde 2015. Conheça a missão, a visão, os valores e os parceiros académicos da Kilunji.">
+<meta property="og:image" content="assets/img/logo-icon.png">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,115 +20,225 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-<header>
-  <nav class="nav">
-    <a href="index.html" class="brand">
-      <img class="brand-logo" src="assets/img/logo-full.png" alt="Kilunji — Editora e Livraria — lendo com alma">
+<a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+<header class="site-header">
+  <nav class="nav" aria-label="Menu principal">
+    <a href="index.html" class="brand" aria-label="Kilunji Editora — página inicial">
+      <img class="brand-icon" src="assets/img/logo-icon.png" alt="" width="42" height="38">
+      <span class="brand-text"><b>Kilunji</b><small>Editora · lendo com alma</small></span>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html" class="active">Sobre</a></li>
-      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="sobre.html" class="active" aria-current="page">Quem Somos</a></li>
       <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="submeter-livro.html">Submeter livro</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li class="mobile-cta"><a href="https://wa.me/244923579737" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+      <li><a href="autores.html">Autores</a></li>
+      <li class="has-sub">
+        <button type="button" class="sub-toggle" aria-expanded="false" aria-controls="sub-livros">Livros <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+        <ul class="sub-menu" id="sub-livros">
+          <li><a href="lancamentos.html"><i class="fa-solid fa-star" aria-hidden="true"></i><span>Lançamentos<small>Novidades e destaques</small></span></a></li>
+          <li><a href="catalogo.html"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Catálogo completo<small>Todos os títulos Kilunji</small></span></a></li>
+          <li><a href="livrarias.html"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i><span>Livrarias e pontos de venda<small>Books and Coffee e parceiros</small></span></a></li>
+        </ul>
+      </li>
+      <li><a href="programa-o-livro.html">O Livro</a></li>
+      <li><a href="revista.html">Revista</a></li>
+      <li><a href="contacto.html">Contactos</a></li>
+      <li class="mobile-cta"><a href="submeter-livro.html"><i class="fa-solid fa-feather-pointer" aria-hidden="true"></i> Publicar o meu livro</a></li>
     </ul>
-    <a class="nav-cta" href="https://wa.me/244923579737" target="_blank" rel="noopener">
-      <i class="fa-brands fa-whatsapp"></i> WhatsApp
-    </a>
-    <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
-      <i class="fa-solid fa-bars"></i>
+    <a class="nav-cta" href="submeter-livro.html"><i class="fa-solid fa-feather-pointer" aria-hidden="true"></i> Publicar o meu livro</a>
+    <button type="button" class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
     </button>
   </nav>
 </header>
 
-<main>
+<main id="conteudo">
 
   <div class="page-hero">
     <div class="wrap">
-      <p class="breadcrumb"><a href="index.html">Início</a> / Sobre</p>
+      <p class="breadcrumb"><a href="index.html">Início</a> / Quem Somos</p>
       <span class="kicker">quem somos</span>
-      <h1>Mente e raiz, no mesmo livro.</h1>
-      <p>A história por trás do nome Kilunji e do símbolo que carregamos em cada livro.</p>
+      <h1>Kilunji é alma em cada página.</h1>
+      <p>Uma editora generalista angolana que, desde 2015, dá voz a quem tem algo a dizer.</p>
     </div>
   </div>
 
-  <section class="sobre">
+  <section>
     <div class="wrap sobre-grid">
       <div class="sobre-mark">
-        <img src="assets/img/logo-icon.png" alt="Símbolo Kilunji: cérebro e continente africano unidos">
+        <img src="assets/img/logo-icon.png" alt="Símbolo Kilunji: um cérebro unido ao mapa de África" width="220" height="200">
       </div>
-      <div class="sobre-body">
-        <p class="pull">"Ler não é só alimentar a cabeça — é também alimentar a alma e a identidade de onde se vem."</p>
-        <p>O nosso símbolo mostra um cérebro fundido com o mapa de África, porque é isso que a leitura faz por nós: expande o pensamento sem nos afastar da nossa origem. Foi esse princípio que deu nome à Kilunji.</p>
-        <p>Somos uma editora e livraria generalista sediada na Maianga, em Luanda. Isso quer dizer que não nos fechamos a um único género: publicamos e distribuímos livros de psicologia, ciências sociais, temas de actualidade e muito mais, sempre com o cuidado de escolher conteúdo que tenha valor real para quem lê.</p>
-        <p>Trabalhamos de perto com autores e especialistas — como é o caso da nossa parceria com a comunidade de psicólogos em Angola — para trazer ao público angolano livros que unem rigor e acessibilidade.</p>
+      <div class="prose">
+        <p class="pull">"Acreditamos que cada livro tem o poder de transformar quem o lê."</p>
+        <p>Somos uma editora generalista angolana. Desde 2015, publicamos obras das mais diversas áreas do saber — da ciência à literatura, da educação à arte — e acreditamos que cada livro tem o poder de transformar quem o lê.</p>
+        <p>É com essa alma e essa consciência que apoiamos os autores nacionais: damos voz a quem tem algo a dizer, cuidamos de cada detalhe do processo editorial e levamos as suas obras a leitores em todo o país.</p>
+        <p>O nosso símbolo — um cérebro fundido com o mapa de África — resume o que a leitura faz por nós: expande o pensamento sem nos afastar da nossa origem.</p>
       </div>
     </div>
   </section>
 
+  <!-- MISSÃO E VISÃO -->
+  <section class="section-alt">
+    <div class="wrap">
+      <div class="mv-grid">
+        <div class="mv-card">
+          <span class="tag">Missão</span>
+          <h3>Porque existimos</h3>
+          <p>Fomentar o desenvolvimento educacional, cultural, artístico e científico de Angola, através de produtos e serviços editoriais de qualidade, disponíveis nas mais diversas plataformas.</p>
+          <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+        </div>
+        <div class="mv-card">
+          <span class="tag">Visão</span>
+          <h3>Onde queremos chegar</h3>
+          <p>Ser a editora angolana de referência — reconhecida pela excelência das suas publicações em Angola e além-fronteiras.</p>
+          <i class="fa-solid fa-earth-africa" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALORES -->
   <section>
     <div class="wrap">
       <div class="section-head">
         <span class="kicker">o que nos guia</span>
-        <h2>Como escolhemos o que publicamos e vendemos</h2>
+        <h2>Os nossos valores</h2>
       </div>
-      <div class="teaser-grid" style="border-left:1px solid var(--line);">
+      <div class="teaser-grid">
         <div class="teaser">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <h3>Generalista por escolha</h3>
-          <p>Não nos limitamos a um género — o critério é sempre o valor que o livro traz a quem lê.</p>
+          <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+          <h3>Criatividade e Inovação</h3>
+          <p>Procuramos novas formas de contar, editar e fazer chegar os livros aos leitores.</p>
         </div>
         <div class="teaser">
-          <i class="fa-solid fa-handshake"></i>
-          <h3>Perto dos autores</h3>
-          <p>Acompanhamos de perto autores e especialistas angolanos, do manuscrito à estante.</p>
+          <i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
+          <h3>Ética e Responsabilidade Social</h3>
+          <p>Respeitamos autores, leitores e comunidade, e contribuímos para uma sociedade que lê mais.</p>
         </div>
         <div class="teaser">
-          <i class="fa-solid fa-earth-africa"></i>
-          <h3>Raiz angolana</h3>
-          <p>Conteúdo pensado para o leitor angolano, sem perder rigor nem qualidade editorial.</p>
+          <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+          <h3>Transparência e Compromisso</h3>
+          <p>Relações claras, prazos cumpridos e confiança em cada etapa.</p>
         </div>
+        <div class="teaser">
+          <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+          <h3>Rigor e Colaboração</h3>
+          <p>Exigência em cada página, construída lado a lado com o autor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARCEIROS -->
+  <section class="section-alt" id="parceiros">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">parceiros</span>
+        <h2>Instituições que partilham o nosso compromisso</h2>
+        <p>Trabalhamos com instituições de ensino superior que partilham o nosso compromisso com o conhecimento e a produção científica angolana.</p>
+      </div>
+      <div class="partners">
+        <div class="partner"><i class="fa-solid fa-building-columns" aria-hidden="true"></i><div><b>Universidade Agostinho Neto</b><span>Faculdade de Ciências Sociais</span></div></div>
+        <div class="partner"><i class="fa-solid fa-building-columns" aria-hidden="true"></i><div><b>Instituto Superior Politécnico Sol Nascente do Huambo</b><span>Huambo</span></div></div>
+        <div class="partner"><i class="fa-solid fa-building-columns" aria-hidden="true"></i><div><b>Escola Superior Pedagógica do Bengo</b><span>Bengo</span></div></div>
+        <div class="partner"><i class="fa-solid fa-building-columns" aria-hidden="true"></i><div><b>Instituto Superior Politécnico Walinga</b><span>Ensino superior</span></div></div>
+      </div>
+      <p class="divider-note">Quer ser nosso parceiro? <a href="contacto.html?assunto=parcerias#formulario">Fale connosco →</a></p>
+    </div>
+  </section>
+
+  <section class="cta-band tight">
+    <div class="wrap cta-box">
+      <div>
+        <span class="kicker">próximo passo</span>
+        <h2>Veja como podemos ajudar o seu projecto.</h2>
+        <p>Edição, revisão, design, ISBN, promoção e distribuição — tudo num só parceiro.</p>
+      </div>
+      <div class="btn-actions">
+        <a class="btn btn-wine" href="servicos.html">Conhecer os serviços <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer>
+<footer class="site-footer">
   <div class="wrap">
+
+    <div class="newsletter" id="novidades">
+      <div class="newsletter-inner">
+        <div>
+          <h2>Receba as novidades da Kilunji</h2>
+          <p>Lançamentos, sessões de autógrafos e convidados do programa O Livro — directamente no seu e-mail.</p>
+        </div>
+        <form action="https://formsubmit.co/wilsonvicentelucas@gmail.com" method="POST" data-next="obrigado.html?tipo=novidades">
+          <input type="hidden" name="_subject" value="Nova subscrição de novidades — Kilunji">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="obrigado.html?tipo=novidades">
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label for="newsletterEmail" class="visually-hidden">O seu e-mail</label>
+          <input type="email" id="newsletterEmail" name="E-mail para novidades" required placeholder="O seu e-mail">
+          <button type="submit">Subscrever</button>
+        </form>
+      </div>
+    </div>
+
     <div class="foot-grid">
       <div class="foot-brand">
-        <img src="assets/img/logo-full.png" alt="Kilunji — Editora e Livraria">
-        <p>Editora e livraria generalista na Maianga, Luanda. Livros para pensar melhor e ler com alma.</p>
+        <a href="index.html" class="brand" aria-label="Kilunji Editora — página inicial">
+          <img class="brand-icon" src="assets/img/logo-icon.png" alt="" width="42" height="38">
+          <span class="brand-text"><b>Kilunji</b><small>Editora · lendo com alma</small></span>
+        </a>
+        <p>Editora generalista angolana. Desde 2015, transformamos ideias em livros — do primeiro manuscrito até às mãos do leitor.</p>
+        <div class="foot-social">
+          <a href="https://www.facebook.com/share/19PNBQKD8v/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook da Kilunji"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/244923579737" target="_blank" rel="noopener" aria-label="WhatsApp da Kilunji"><i class="fa-brands fa-whatsapp"></i></a>
+          <!-- Acrescentar quando os links estiverem disponíveis:
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram da Kilunji"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn da Kilunji"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Programa O Livro no YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Programa O Livro no Spotify"><i class="fa-brands fa-spotify"></i></a>
+          -->
+        </div>
       </div>
       <div>
-        <h5>Navegação</h5>
+        <h5>A Editora</h5>
         <ul>
-          <li><a href="sobre.html">Sobre nós</a></li>
-          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="sobre.html">Quem Somos</a></li>
           <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="submeter-livro.html">Submeter livro</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="autores.html">Autores</a></li>
+          <li><a href="revista.html">Revista Científica</a></li>
+          <li><a href="submeter-livro.html">Submeter manuscrito</a></li>
         </ul>
       </div>
       <div>
-        <h5>Contacto</h5>
+        <h5>Livros</h5>
         <ul>
-          <li><a href="tel:+244923579737"><i class="fa-solid fa-phone"></i> 923 579 737</a></li>
+          <li><a href="lancamentos.html">Lançamentos</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="livrarias.html">Livrarias e pontos de venda</a></li>
+          <li><a href="programa-o-livro.html">Programa O Livro</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contactos</h5>
+        <ul class="contact-list">
+          <li><a href="tel:+244923579737"><i class="fa-solid fa-phone"></i> +244 923 579 737</a></li>
           <li><a href="https://wa.me/244923579737" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
-          <li><a href="https://www.facebook.com/share/19PNBQKD8v/?mibextid=wwXIfr" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+          <li><a href="contacto.html#mapa"><i class="fa-solid fa-location-dot"></i> Rua Ho Chi Minh, Faculdade de Ciências Sociais da UAN, Luanda</a></li>
+          <li><a href="contacto.html"><i class="fa-regular fa-clock"></i> Seg.–Sex., 9h00–19h00</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span id="year"></span> Kilunji — Editora e Livraria. Maianga, Luanda.</span>
-      <span>Feito com atenção, para quem lê.</span>
+      <span>© <span data-year>2026</span> Kilunji Editora. Todos os direitos reservados.</span>
+      <span>Lendo com alma.</span>
     </div>
   </div>
 </footer>
+
+<a class="wa-float" href="https://wa.me/244923579737" target="_blank" rel="noopener" aria-label="Falar connosco pelo WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
 <script src="assets/js/main.js" defer></script>
 </body>

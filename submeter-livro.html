@@ -3,8 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Submeter livro | Kilunji — Editora e Livraria</title>
-<meta name="description" content="Tem um livro? Submeta os detalhes à Kilunji para publicação ou venda. Envie o ficheiro ou um link e a nossa equipa entra em contacto.">
+<title>Submeter manuscrito | Kilunji Editora</title>
+<meta name="description" content="Tem um manuscrito, uma investigação ou uma ideia que merece ser lida? Envie-nos uma breve apresentação da obra e a Kilunji entra em contacto.">
+<meta name="theme-color" content="#221a12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kilunji Editora">
+<meta property="og:locale" content="pt_AO">
+<meta property="og:title" content="Submeter manuscrito | Kilunji Editora">
+<meta property="og:description" content="Tem um manuscrito, uma investigação ou uma ideia que merece ser lida? Envie-nos uma breve apresentação da obra e a Kilunji entra em contacto.">
+<meta property="og:image" content="assets/img/logo-icon.png">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,38 +20,46 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-<header>
-  <nav class="nav">
-    <a href="index.html" class="brand">
-      <img class="brand-logo" src="assets/img/logo-full.png" alt="Kilunji — Editora e Livraria — lendo com alma">
+<a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+<header class="site-header">
+  <nav class="nav" aria-label="Menu principal">
+    <a href="index.html" class="brand" aria-label="Kilunji Editora — página inicial">
+      <img class="brand-icon" src="assets/img/logo-icon.png" alt="" width="42" height="38">
+      <span class="brand-text"><b>Kilunji</b><small>Editora · lendo com alma</small></span>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="sobre.html">Quem Somos</a></li>
       <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="submeter-livro.html" class="active">Submeter livro</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li class="mobile-cta"><a href="https://wa.me/244923579737" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+      <li><a href="autores.html">Autores</a></li>
+      <li class="has-sub">
+        <button type="button" class="sub-toggle" aria-expanded="false" aria-controls="sub-livros">Livros <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+        <ul class="sub-menu" id="sub-livros">
+          <li><a href="lancamentos.html"><i class="fa-solid fa-star" aria-hidden="true"></i><span>Lançamentos<small>Novidades e destaques</small></span></a></li>
+          <li><a href="catalogo.html"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Catálogo completo<small>Todos os títulos Kilunji</small></span></a></li>
+          <li><a href="livrarias.html"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i><span>Livrarias e pontos de venda<small>Books and Coffee e parceiros</small></span></a></li>
+        </ul>
+      </li>
+      <li><a href="programa-o-livro.html">O Livro</a></li>
+      <li><a href="revista.html">Revista</a></li>
+      <li><a href="contacto.html">Contactos</a></li>
+      <li class="mobile-cta"><a href="submeter-livro.html"><i class="fa-solid fa-feather-pointer" aria-hidden="true"></i> Publicar o meu livro</a></li>
     </ul>
-    <a class="nav-cta" href="https://wa.me/244923579737" target="_blank" rel="noopener">
-      <i class="fa-brands fa-whatsapp"></i> WhatsApp
-    </a>
-    <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
-      <i class="fa-solid fa-bars"></i>
+    <a class="nav-cta" href="submeter-livro.html"><i class="fa-solid fa-feather-pointer" aria-hidden="true"></i> Publicar o meu livro</a>
+    <button type="button" class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
     </button>
   </nav>
 </header>
 
-<main>
+<main id="conteudo">
 
   <div class="page-hero">
     <div class="wrap">
-      <p class="breadcrumb"><a href="index.html">Início</a> / Submeter livro</p>
-      <span class="kicker">tenho um livro</span>
-      <h1>Submeta o seu livro à Kilunji</h1>
-      <p>Escreveu um livro e procura uma editora, ou já o tem publicado e quer vendê-lo na nossa livraria? Conte-nos mais através do formulário abaixo — é o primeiro passo para começarmos a conversar.</p>
+      <p class="breadcrumb"><a href="index.html">Início</a> / Submeter manuscrito</p>
+      <span class="kicker">tem um livro para publicar?</span>
+      <h1>Submeta o seu manuscrito à Kilunji</h1>
+      <p>Se tem um manuscrito, uma investigação ou uma ideia que merece ser lida, queremos conhecê-la. Envie-nos uma breve apresentação da obra e entraremos em contacto para conversar sobre o seu projecto.</p>
     </div>
   </div>
 
@@ -54,21 +69,21 @@
       <div class="steps-grid">
         <div class="step">
           <span class="step-num">PASSO 1</span>
-          <i class="fa-solid fa-pen-nib"></i>
-          <h3>Preencha o formulário</h3>
-          <p>Indique o título, autor(es), género e um breve resumo do livro.</p>
+          <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
+          <h3>Apresente a obra</h3>
+          <p>Indique o título, autor(es), área e um breve resumo do livro.</p>
         </div>
         <div class="step">
           <span class="step-num">PASSO 2</span>
-          <i class="fa-solid fa-file-arrow-up"></i>
-          <h3>Envie o livro</h3>
-          <p>Anexe o ficheiro (PDF ou outro formato) ou cole um link do Google Drive, OneDrive ou similar.</p>
+          <i class="fa-solid fa-file-arrow-up" aria-hidden="true"></i>
+          <h3>Envie o manuscrito</h3>
+          <p>Anexe o ficheiro ou cole um link do Google Drive, OneDrive ou similar.</p>
         </div>
         <div class="step">
           <span class="step-num">PASSO 3</span>
-          <i class="fa-solid fa-comments"></i>
-          <h3>Aguarde o nosso contacto</h3>
-          <p>A nossa equipa analisa a submissão e entra em contacto pelo email ou telefone indicados.</p>
+          <i class="fa-solid fa-comments" aria-hidden="true"></i>
+          <h3>Conversa inicial</h3>
+          <p>Analisamos a obra e entramos em contacto para conversar sobre o seu projecto e enviar uma proposta à medida.</p>
         </div>
       </div>
     </div>
@@ -80,46 +95,58 @@
       <div class="form-card">
 
         <div class="form-note">
-          <i class="fa-solid fa-circle-info"></i>
-          <span>Este formulário serve tanto para quem procura <strong>publicar</strong> um livro inédito através da nossa editora, como para quem já tem um livro publicado e quer <strong>vendê-lo</strong> na nossa livraria. Preencha da forma que fizer mais sentido para o seu caso.</span>
+          <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          <span>Este formulário serve tanto para quem procura <strong>publicar</strong> um livro inédito com a Kilunji, como para quem já tem um livro publicado e quer <strong>vendê-lo</strong> nos nossos pontos de venda. Preencha da forma que fizer mais sentido para o seu caso.</span>
         </div>
 
-        <form action="https://formsubmit.co/wilsonvicentelucas@gmail.com" method="POST" enctype="multipart/form-data">
+        <form action="https://formsubmit.co/wilsonvicentelucas@gmail.com" method="POST" enctype="multipart/form-data" data-next="obrigado.html?tipo=livro">
 
           <!-- Campos de configuração do FormSubmit -->
-          <input type="hidden" name="_subject" value="Nova submissão de livro — Kilunji">
+          <input type="hidden" name="_subject" value="Nova submissão de manuscrito — Kilunji">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="obrigado.html">
+          <input type="hidden" name="_next" value="obrigado.html?tipo=livro">
           <!-- Campo-armadilha anti-spam: deve ficar sempre vazio -->
-          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off">
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
 
           <fieldset class="form-section">
             <legend>Sobre o livro</legend>
 
             <div class="field">
+              <label for="objectivo">O que pretende? <span class="req">*</span></label>
+              <select id="objectivo" name="Objectivo" required>
+                <option value="" disabled selected>Escolha uma opção</option>
+                <option>Publicar um livro inédito</option>
+                <option>Vender um livro já publicado</option>
+                <option>Ainda não sei — quero orientação</option>
+              </select>
+            </div>
+
+            <div class="field">
               <label for="titulo_livro">Título do livro <span class="req">*</span></label>
-              <input type="text" id="titulo_livro" name="Título do livro" required placeholder="Ex: Psicologia Positiva: Ciência para Todos">
+              <input type="text" id="titulo_livro" name="Título do livro" required placeholder="Ex: Manual de Ética e Deontologia no Exercício da Psicologia">
             </div>
 
             <div class="field">
               <label for="autores">Autor(es) <span class="req">*</span></label>
-              <input type="text" id="autores" name="Autor(es)" required placeholder="Ex: Paulo Alves">
+              <input type="text" id="autores" name="Autor(es)" required placeholder="Ex: Catarino Luamba">
               <span class="helper">Se houver mais do que um autor, separe os nomes por vírgula.</span>
             </div>
 
             <div class="field-row">
               <div class="field">
-                <label for="genero">Género / Categoria <span class="req">*</span></label>
+                <label for="genero">Área / Género <span class="req">*</span></label>
                 <select id="genero" name="Género" required>
                   <option value="" disabled selected>Escolha uma opção</option>
-                  <option>Ficção</option>
-                  <option>Não-ficção</option>
+                  <option>Literatura — ficção</option>
+                  <option>Poesia</option>
                   <option>Psicologia</option>
                   <option>Ciências sociais</option>
-                  <option>Poesia</option>
-                  <option>Infantil / Juvenil</option>
+                  <option>Ciência e tecnologia</option>
+                  <option>Educação</option>
                   <option>Académico / Científico</option>
+                  <option>Arte e cultura</option>
+                  <option>Infantil / Juvenil</option>
                   <option>Autoajuda / Desenvolvimento pessoal</option>
                   <option>Biografia / Memórias</option>
                   <option>Outro</option>
@@ -136,38 +163,50 @@
               <label for="sinopse">Sinopse / Resumo <span class="req">*</span></label>
               <textarea id="sinopse" name="Sinopse" required placeholder="Um breve resumo do livro (3 a 10 linhas)"></textarea>
             </div>
+
+            <div class="field">
+              <span class="label">Serviços de que poderá precisar</span>
+              <div class="check-grid">
+                <label class="check"><input type="checkbox" name="Serviços[]" value="Revisão"> Revisão linguística</label>
+                <label class="check"><input type="checkbox" name="Serviços[]" value="Paginação e capa"> Paginação e capa</label>
+                <label class="check"><input type="checkbox" name="Serviços[]" value="ISBN e depósito legal"> ISBN e depósito legal</label>
+                <label class="check"><input type="checkbox" name="Serviços[]" value="Impressão"> Impressão</label>
+                <label class="check"><input type="checkbox" name="Serviços[]" value="Lançamento e promoção"> Lançamento e promoção</label>
+                <label class="check"><input type="checkbox" name="Serviços[]" value="Venda e distribuição"> Venda e distribuição</label>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="form-section">
+          <fieldset class="form-section" data-method-group>
             <legend>Enviar o livro</legend>
 
             <div class="method-toggle" role="radiogroup" aria-label="Como pretende enviar o livro">
               <label class="method-option">
                 <input type="radio" name="metodo_envio" value="ficheiro" checked>
-                <i class="fa-solid fa-file-arrow-up"></i> Anexar ficheiro
+                <i class="fa-solid fa-file-arrow-up" aria-hidden="true"></i> Anexar ficheiro
               </label>
               <label class="method-option">
                 <input type="radio" name="metodo_envio" value="link">
-                <i class="fa-solid fa-link"></i> Enviar link
+                <i class="fa-solid fa-link" aria-hidden="true"></i> Enviar link
               </label>
             </div>
 
-            <div id="panel-ficheiro" class="method-panel">
+            <div class="method-panel" data-method-panel="ficheiro">
               <div class="field">
-                <div class="file-drop" id="fileDrop">
-                  <i class="fa-solid fa-cloud-arrow-up"></i>
-                  <span>Clique para escolher o ficheiro do livro</span>
-                  <input type="file" id="livro_ficheiro" name="Ficheiro do livro" accept=".pdf,.doc,.docx,.odt,.rtf,.epub">
+                <div class="file-drop" data-max-mb="15">
+                  <i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>
+                  <span>Clique ou arraste o ficheiro do livro para aqui</span>
+                  <input type="file" id="livro_ficheiro" name="Ficheiro do livro" accept=".pdf,.doc,.docx,.odt,.rtf,.epub" data-required-when-active aria-label="Ficheiro do livro">
                 </div>
-                <div class="file-name" id="fileName"></div>
-                <span class="helper">Formatos aceites: PDF, DOC, DOCX, ODT, RTF ou EPUB. Tamanho máximo recomendado: 15&nbsp;MB.</span>
+                <div class="file-name" aria-live="polite"></div>
+                <span class="helper">Formatos aceites: PDF, DOC, DOCX, ODT, RTF ou EPUB. Máximo: 15&nbsp;MB — para ficheiros maiores, use a opção "Enviar link".</span>
               </div>
             </div>
 
-            <div id="panel-link" class="method-panel">
+            <div class="method-panel" data-method-panel="link">
               <div class="field">
                 <label for="livro_link">Link do livro</label>
-                <input type="url" id="livro_link" name="Link do livro" placeholder="https://drive.google.com/... ou https://onedrive.live.com/...">
+                <input type="url" id="livro_link" name="Link do livro" data-required-when-active placeholder="https://drive.google.com/... ou https://onedrive.live.com/...">
                 <span class="helper">Google Drive, OneDrive, Dropbox ou outro serviço — confirme que o link tem permissão de visualização/transferência.</span>
               </div>
             </div>
@@ -178,17 +217,17 @@
 
             <div class="field">
               <label for="contacto_nome">Nome <span class="req">*</span></label>
-              <input type="text" id="contacto_nome" name="Nome de contacto" required placeholder="O seu nome">
+              <input type="text" id="contacto_nome" name="Nome de contacto" required autocomplete="name" placeholder="O seu nome">
             </div>
 
             <div class="field-row">
               <div class="field">
-                <label for="contacto_email">Email <span class="req">*</span></label>
-                <input type="email" id="contacto_email" name="Email de contacto" required placeholder="nome@email.com">
+                <label for="contacto_email">E-mail <span class="req">*</span></label>
+                <input type="email" id="contacto_email" name="Email de contacto" required autocomplete="email" placeholder="nome@email.com">
               </div>
               <div class="field">
                 <label for="contacto_telefone">Telefone / WhatsApp</label>
-                <input type="tel" id="contacto_telefone" name="Telefone de contacto" placeholder="9XX XXX XXX">
+                <input type="tel" id="contacto_telefone" name="Telefone de contacto" autocomplete="tel" placeholder="9XX XXX XXX">
               </div>
             </div>
 
@@ -198,7 +237,7 @@
             </div>
           </fieldset>
 
-          <button type="submit" class="submit-btn"><i class="fa-solid fa-paper-plane"></i> Enviar submissão</button>
+          <button type="submit" class="submit-btn"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enviar submissão</button>
         </form>
       </div>
     </div>
@@ -206,38 +245,83 @@
 
 </main>
 
-<footer>
+<footer class="site-footer">
   <div class="wrap">
+
+    <div class="newsletter" id="novidades">
+      <div class="newsletter-inner">
+        <div>
+          <h2>Receba as novidades da Kilunji</h2>
+          <p>Lançamentos, sessões de autógrafos e convidados do programa O Livro — directamente no seu e-mail.</p>
+        </div>
+        <form action="https://formsubmit.co/wilsonvicentelucas@gmail.com" method="POST" data-next="obrigado.html?tipo=novidades">
+          <input type="hidden" name="_subject" value="Nova subscrição de novidades — Kilunji">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="obrigado.html?tipo=novidades">
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label for="newsletterEmail" class="visually-hidden">O seu e-mail</label>
+          <input type="email" id="newsletterEmail" name="E-mail para novidades" required placeholder="O seu e-mail">
+          <button type="submit">Subscrever</button>
+        </form>
+      </div>
+    </div>
+
     <div class="foot-grid">
       <div class="foot-brand">
-        <img src="assets/img/logo-full.png" alt="Kilunji — Editora e Livraria">
-        <p>Editora e livraria generalista na Maianga, Luanda. Livros para pensar melhor e ler com alma.</p>
+        <a href="index.html" class="brand" aria-label="Kilunji Editora — página inicial">
+          <img class="brand-icon" src="assets/img/logo-icon.png" alt="" width="42" height="38">
+          <span class="brand-text"><b>Kilunji</b><small>Editora · lendo com alma</small></span>
+        </a>
+        <p>Editora generalista angolana. Desde 2015, transformamos ideias em livros — do primeiro manuscrito até às mãos do leitor.</p>
+        <div class="foot-social">
+          <a href="https://www.facebook.com/share/19PNBQKD8v/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook da Kilunji"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/244923579737" target="_blank" rel="noopener" aria-label="WhatsApp da Kilunji"><i class="fa-brands fa-whatsapp"></i></a>
+          <!-- Acrescentar quando os links estiverem disponíveis:
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram da Kilunji"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn da Kilunji"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Programa O Livro no YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Programa O Livro no Spotify"><i class="fa-brands fa-spotify"></i></a>
+          -->
+        </div>
       </div>
       <div>
-        <h5>Navegação</h5>
+        <h5>A Editora</h5>
         <ul>
-          <li><a href="sobre.html">Sobre nós</a></li>
-          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="sobre.html">Quem Somos</a></li>
           <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="submeter-livro.html">Submeter livro</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="autores.html">Autores</a></li>
+          <li><a href="revista.html">Revista Científica</a></li>
+          <li><a href="submeter-livro.html">Submeter manuscrito</a></li>
         </ul>
       </div>
       <div>
-        <h5>Contacto</h5>
+        <h5>Livros</h5>
         <ul>
-          <li><a href="tel:+244923579737"><i class="fa-solid fa-phone"></i> 923 579 737</a></li>
+          <li><a href="lancamentos.html">Lançamentos</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="livrarias.html">Livrarias e pontos de venda</a></li>
+          <li><a href="programa-o-livro.html">Programa O Livro</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contactos</h5>
+        <ul class="contact-list">
+          <li><a href="tel:+244923579737"><i class="fa-solid fa-phone"></i> +244 923 579 737</a></li>
           <li><a href="https://wa.me/244923579737" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
-          <li><a href="https://www.facebook.com/share/19PNBQKD8v/?mibextid=wwXIfr" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+          <li><a href="contacto.html#mapa"><i class="fa-solid fa-location-dot"></i> Rua Ho Chi Minh, Faculdade de Ciências Sociais da UAN, Luanda</a></li>
+          <li><a href="contacto.html"><i class="fa-regular fa-clock"></i> Seg.–Sex., 9h00–19h00</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span id="year"></span> Kilunji — Editora e Livraria. Maianga, Luanda.</span>
-      <span>Feito com atenção, para quem lê.</span>
+      <span>© <span data-year>2026</span> Kilunji Editora. Todos os direitos reservados.</span>
+      <span>Lendo com alma.</span>
     </div>
   </div>
 </footer>
+
+<a class="wa-float" href="https://wa.me/244923579737" target="_blank" rel="noopener" aria-label="Falar connosco pelo WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
 <script src="assets/js/main.js" defer></script>
 </body>

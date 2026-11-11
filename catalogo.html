@@ -3,8 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catálogo | Kilunji — Editora e Livraria</title>
-<meta name="description" content="Conheça os títulos publicados e vendidos pela Kilunji: psicologia, sociedade e cultura geral.">
+<title>Catálogo | Kilunji Editora</title>
+<meta name="description" content="Catálogo de títulos da Kilunji Editora: psicologia, sociedade, cultura geral e mais. Pesquise, filtre por área e reserve pelo WhatsApp.">
+<meta name="theme-color" content="#221a12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kilunji Editora">
+<meta property="og:locale" content="pt_AO">
+<meta property="og:title" content="Catálogo | Kilunji Editora">
+<meta property="og:description" content="Catálogo de títulos da Kilunji Editora: psicologia, sociedade, cultura geral e mais. Pesquise, filtre por área e reserve pelo WhatsApp.">
+<meta property="og:image" content="assets/img/logo-icon.png">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,127 +20,246 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-<header>
-  <nav class="nav">
-    <a href="index.html" class="brand">
-      <img class="brand-logo" src="assets/img/logo-full.png" alt="Kilunji — Editora e Livraria — lendo com alma">
+<a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+<header class="site-header">
+  <nav class="nav" aria-label="Menu principal">
+    <a href="index.html" class="brand" aria-label="Kilunji Editora — página inicial">
+      <img class="brand-icon" src="assets/img/logo-icon.png" alt="" width="42" height="38">
+      <span class="brand-text"><b>Kilunji</b><small>Editora · lendo com alma</small></span>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="catalogo.html" class="active">Catálogo</a></li>
+      <li><a href="sobre.html">Quem Somos</a></li>
       <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="submeter-livro.html">Submeter livro</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li class="mobile-cta"><a href="https://wa.me/244923579737" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+      <li><a href="autores.html">Autores</a></li>
+      <li class="has-sub">
+        <button type="button" class="sub-toggle active" aria-expanded="false" aria-controls="sub-livros">Livros <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+        <ul class="sub-menu" id="sub-livros">
+          <li><a href="lancamentos.html"><i class="fa-solid fa-star" aria-hidden="true"></i><span>Lançamentos<small>Novidades e destaques</small></span></a></li>
+          <li><a href="catalogo.html" class="active" aria-current="page"><i class="fa-solid fa-book-open" aria-hidden="true"></i><span>Catálogo completo<small>Todos os títulos Kilunji</small></span></a></li>
+          <li><a href="livrarias.html"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i><span>Livrarias e pontos de venda<small>Books and Coffee e parceiros</small></span></a></li>
+        </ul>
+      </li>
+      <li><a href="programa-o-livro.html">O Livro</a></li>
+      <li><a href="revista.html">Revista</a></li>
+      <li><a href="contacto.html">Contactos</a></li>
+      <li class="mobile-cta"><a href="submeter-livro.html"><i class="fa-solid fa-feather-pointer" aria-hidden="true"></i> Publicar o meu livro</a></li>
     </ul>
-    <a class="nav-cta" href="https://wa.me/244923579737" target="_blank" rel="noopener">
-      <i class="fa-brands fa-whatsapp"></i> WhatsApp
-    </a>
-    <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
-      <i class="fa-solid fa-bars"></i>
+    <a class="nav-cta" href="submeter-livro.html"><i class="fa-solid fa-feather-pointer" aria-hidden="true"></i> Publicar o meu livro</a>
+    <button type="button" class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
     </button>
   </nav>
 </header>
 
-<main>
+<main id="conteudo">
 
   <div class="page-hero">
     <div class="wrap">
-      <p class="breadcrumb"><a href="index.html">Início</a> / Catálogo</p>
-      <span class="kicker">no catálogo</span>
-      <h1>Alguns dos nossos títulos</h1>
-      <p>Uma amostra da nossa produção editorial recente — dos temas de comportamento humano à ciência do dia a dia.</p>
+      <p class="breadcrumb"><a href="index.html">Início</a> / Livros / Catálogo</p>
+      <span class="kicker">catálogo</span>
+      <h1>Livros para ler com alma.</h1>
+      <p>Obras das mais diversas áreas do saber, publicadas pela Kilunji. Pesquise por título, autor ou tema e reserve o seu exemplar pelo WhatsApp.</p>
     </div>
   </div>
 
   <section>
     <div class="wrap">
-      <div class="catalogo-list">
-        <div class="book-row">
-          <div class="book-icon"><i class="fa-solid fa-book"></i></div>
-          <div>
-            <div class="book-title">Psicologia Positiva: Ciência para Todos</div>
-            <div class="book-author">Paulo Alves</div>
-          </div>
-          <div class="book-tag"><i class="fa-solid fa-brain"></i> Psicologia</div>
-          <div class="book-note">Divulgação científica acessível a qualquer leitor</div>
+
+      <div class="filter-bar">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <label for="catalogSearch" class="visually-hidden">Pesquisar no catálogo</label>
+          <input type="search" id="catalogSearch" placeholder="Pesquisar título, autor ou tema…" autocomplete="off">
         </div>
-        <div class="book-row">
-          <div class="book-icon"><i class="fa-solid fa-book"></i></div>
-          <div>
-            <div class="book-title">Violadores Sexuais: Quem São?</div>
-            <div class="book-author">Conheça o perfil</div>
-          </div>
-          <div class="book-tag"><i class="fa-solid fa-users"></i> Sociedade</div>
-          <div class="book-note">Uma abordagem psicológica ao tema</div>
-        </div>
-        <div class="book-row">
-          <div class="book-icon"><i class="fa-solid fa-book"></i></div>
-          <div>
-            <div class="book-title">Crime e Género</div>
-            <div class="book-author">Colecção Kilunji</div>
-          </div>
-          <div class="book-tag"><i class="fa-solid fa-users"></i> Sociedade</div>
-          <div class="book-note">Cruza direito, psicologia e realidade social</div>
-        </div>
-        <div class="book-row">
-          <div class="book-icon"><i class="fa-solid fa-book"></i></div>
-          <div>
-            <div class="book-title">Curiosidades: Definições Reais e Perguntas Frequentes</div>
-            <div class="book-author">Sílvia Nadir da Costa</div>
-          </div>
-          <div class="book-tag"><i class="fa-solid fa-lightbulb"></i> Cultura geral</div>
-          <div class="book-note">Respostas curtas para perguntas do dia a dia</div>
+        <div class="chips" role="group" aria-label="Filtrar por área">
+          <button type="button" class="chip" data-filter="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="chip" data-filter="psicologia" aria-pressed="false">Psicologia</button>
+          <button type="button" class="chip" data-filter="sociedade" aria-pressed="false">Sociedade</button>
+          <button type="button" class="chip" data-filter="cultura" aria-pressed="false">Cultura geral</button>
         </div>
       </div>
 
-      <p style="margin-top:28px; color:var(--ink-soft); font-size:0.95rem;">
-        Catálogo completo e novidades semanais na nossa página de Facebook — visite-nos ou fale connosco pelo WhatsApp para disponibilidade e encomendas.
-      </p>
+      <p class="result-count" id="resultCount" aria-live="polite">5 títulos</p>
 
-      <div class="hero-actions" style="margin-top:28px;">
-        <a class="btn btn-primary" href="https://wa.me/244923579737" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Perguntar disponibilidade</a>
-        <a class="btn btn-ghost" href="contacto.html">Ver localização</a>
+      <div class="book-grid" data-catalog>
+
+        <article class="book-card" data-cat="psicologia">
+          <div class="cover c-wine" aria-hidden="true">
+            <div><span class="c-collection">Kilunji Editora</span><div class="c-title">Manual de Ética e Deontologia no Exercício da Psicologia</div></div>
+            <div class="c-foot"><span class="c-author">Catarino Luamba</span><img class="c-mark" src="assets/img/logo-icon.png" alt=""></div>
+          </div>
+          <div class="book-info">
+            <div class="book-tags"><span class="tag-pill new">Novidade</span><span class="tag-pill">Psicologia</span></div>
+            <h3 style="margin-top:10px;">Manual de Ética e Deontologia no Exercício da Psicologia</h3>
+            <p class="author">Catarino Luamba · 2.ª ed., 2022</p>
+            <p class="note">ISBN 978-989-9036-11-6 · <b>12.000 Kz</b></p>
+          </div>
+          <div class="book-actions">
+            <a class="btn btn-wine btn-sm" href="https://wa.me/244923579737" data-reserve="Manual de Ética e Deontologia no Exercício da Psicologia — Catarino Luamba"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Reservar</a>
+            <a class="btn btn-ghost btn-sm" href="lancamentos.html">Ficha</a>
+          </div>
+        </article>
+
+        <article class="book-card" data-cat="psicologia">
+          <div class="cover c-bronze" aria-hidden="true">
+            <div><span class="c-collection">Kilunji Editora</span><div class="c-title">Psicologia Positiva: Ciência para Todos</div></div>
+            <div class="c-foot"><span class="c-author">Paulo Alves</span><img class="c-mark" src="assets/img/logo-icon.png" alt=""></div>
+          </div>
+          <div class="book-info">
+            <div class="book-tags"><span class="tag-pill">Psicologia</span></div>
+            <h3 style="margin-top:10px;">Psicologia Positiva: Ciência para Todos</h3>
+            <p class="author">Paulo Alves</p>
+            <p class="note">Divulgação científica acessível a qualquer leitor.</p>
+          </div>
+          <div class="book-actions">
+            <a class="btn btn-wine btn-sm" href="https://wa.me/244923579737" data-reserve="Psicologia Positiva: Ciência para Todos — Paulo Alves"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Reservar</a>
+          </div>
+        </article>
+
+        <article class="book-card" data-cat="sociedade psicologia">
+          <div class="cover c-ink" aria-hidden="true">
+            <div><span class="c-collection">Kilunji Editora</span><div class="c-title">Violadores Sexuais: Quem São?</div></div>
+            <div class="c-foot"><span class="c-author">Conheça o perfil</span><img class="c-mark" src="assets/img/logo-icon.png" alt=""></div>
+          </div>
+          <div class="book-info">
+            <div class="book-tags"><span class="tag-pill">Sociedade</span></div>
+            <h3 style="margin-top:10px;">Violadores Sexuais: Quem São?</h3>
+            <p class="author">Conheça o perfil</p>
+            <p class="note">Uma abordagem psicológica ao tema.</p>
+          </div>
+          <div class="book-actions">
+            <a class="btn btn-wine btn-sm" href="https://wa.me/244923579737" data-reserve="Violadores Sexuais: Quem São?"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Reservar</a>
+          </div>
+        </article>
+
+        <article class="book-card" data-cat="sociedade">
+          <div class="cover c-slate" aria-hidden="true">
+            <div><span class="c-collection">Colecção Kilunji</span><div class="c-title">Crime e Género</div></div>
+            <div class="c-foot"><span class="c-author">Kilunji Editora</span><img class="c-mark" src="assets/img/logo-icon.png" alt=""></div>
+          </div>
+          <div class="book-info">
+            <div class="book-tags"><span class="tag-pill">Sociedade</span></div>
+            <h3 style="margin-top:10px;">Crime e Género</h3>
+            <p class="author">Colecção Kilunji</p>
+            <p class="note">Cruza direito, psicologia e realidade social.</p>
+          </div>
+          <div class="book-actions">
+            <a class="btn btn-wine btn-sm" href="https://wa.me/244923579737" data-reserve="Crime e Género"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Reservar</a>
+          </div>
+        </article>
+
+        <article class="book-card" data-cat="cultura">
+          <div class="cover c-gold" aria-hidden="true">
+            <div><span class="c-collection">Kilunji Editora</span><div class="c-title">Curiosidades: Definições Reais e Perguntas Frequentes</div></div>
+            <div class="c-foot"><span class="c-author">Sílvia Nadir da Costa</span><img class="c-mark" src="assets/img/logo-icon.png" alt=""></div>
+          </div>
+          <div class="book-info">
+            <div class="book-tags"><span class="tag-pill">Cultura geral</span></div>
+            <h3 style="margin-top:10px;">Curiosidades: Definições Reais e Perguntas Frequentes</h3>
+            <p class="author">Sílvia Nadir da Costa</p>
+            <p class="note">Respostas curtas para perguntas do dia a dia.</p>
+          </div>
+          <div class="book-actions">
+            <a class="btn btn-wine btn-sm" href="https://wa.me/244923579737" data-reserve="Curiosidades: Definições Reais e Perguntas Frequentes — Sílvia Nadir da Costa"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Reservar</a>
+          </div>
+        </article>
+
       </div>
+
+      <div class="empty-state" id="catalogEmpty" hidden>
+        <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+        <h3>Nenhum título encontrado</h3>
+        <p>Experimente outra pesquisa ou pergunte-nos directamente — podemos ter o livro que procura.</p>
+        <div class="btn-actions">
+          <button type="button" class="btn btn-ghost" id="catalogReset">Limpar filtros</button>
+          <a class="btn btn-wine" href="https://wa.me/244923579737" data-wa-text="Olá, Kilunji! Procuro um livro que não encontrei no catálogo do site:"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Perguntar disponibilidade</a>
+        </div>
+      </div>
+
+      <p class="divider-note">Os títulos Kilunji estão à venda no Books and Coffee e nos nossos <a href="livrarias.html">pontos de venda</a>. Novidades semanais na nossa <a href="https://www.facebook.com/share/19PNBQKD8v/?mibextid=wwXIfr" target="_blank" rel="noopener">página de Facebook</a>.</p>
     </div>
   </section>
 
 </main>
 
-<footer>
+<footer class="site-footer">
   <div class="wrap">
+
+    <div class="newsletter" id="novidades">
+      <div class="newsletter-inner">
+        <div>
+          <h2>Receba as novidades da Kilunji</h2>
+          <p>Lançamentos, sessões de autógrafos e convidados do programa O Livro — directamente no seu e-mail.</p>
+        </div>
+        <form action="https://formsubmit.co/wilsonvicentelucas@gmail.com" method="POST" data-next="obrigado.html?tipo=novidades">
+          <input type="hidden" name="_subject" value="Nova subscrição de novidades — Kilunji">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="obrigado.html?tipo=novidades">
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label for="newsletterEmail" class="visually-hidden">O seu e-mail</label>
+          <input type="email" id="newsletterEmail" name="E-mail para novidades" required placeholder="O seu e-mail">
+          <button type="submit">Subscrever</button>
+        </form>
+      </div>
+    </div>
+
     <div class="foot-grid">
       <div class="foot-brand">
-        <img src="assets/img/logo-full.png" alt="Kilunji — Editora e Livraria">
-        <p>Editora e livraria generalista na Maianga, Luanda. Livros para pensar melhor e ler com alma.</p>
+        <a href="index.html" class="brand" aria-label="Kilunji Editora — página inicial">
+          <img class="brand-icon" src="assets/img/logo-icon.png" alt="" width="42" height="38">
+          <span class="brand-text"><b>Kilunji</b><small>Editora · lendo com alma</small></span>
+        </a>
+        <p>Editora generalista angolana. Desde 2015, transformamos ideias em livros — do primeiro manuscrito até às mãos do leitor.</p>
+        <div class="foot-social">
+          <a href="https://www.facebook.com/share/19PNBQKD8v/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook da Kilunji"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/244923579737" target="_blank" rel="noopener" aria-label="WhatsApp da Kilunji"><i class="fa-brands fa-whatsapp"></i></a>
+          <!-- Acrescentar quando os links estiverem disponíveis:
+          <a href="#" target="_blank" rel="noopener" aria-label="Instagram da Kilunji"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn da Kilunji"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Programa O Livro no YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" target="_blank" rel="noopener" aria-label="Programa O Livro no Spotify"><i class="fa-brands fa-spotify"></i></a>
+          -->
+        </div>
       </div>
       <div>
-        <h5>Navegação</h5>
+        <h5>A Editora</h5>
         <ul>
-          <li><a href="sobre.html">Sobre nós</a></li>
-          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="sobre.html">Quem Somos</a></li>
           <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="submeter-livro.html">Submeter livro</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="autores.html">Autores</a></li>
+          <li><a href="revista.html">Revista Científica</a></li>
+          <li><a href="submeter-livro.html">Submeter manuscrito</a></li>
         </ul>
       </div>
       <div>
-        <h5>Contacto</h5>
+        <h5>Livros</h5>
         <ul>
-          <li><a href="tel:+244923579737"><i class="fa-solid fa-phone"></i> 923 579 737</a></li>
+          <li><a href="lancamentos.html">Lançamentos</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="livrarias.html">Livrarias e pontos de venda</a></li>
+          <li><a href="programa-o-livro.html">Programa O Livro</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contactos</h5>
+        <ul class="contact-list">
+          <li><a href="tel:+244923579737"><i class="fa-solid fa-phone"></i> +244 923 579 737</a></li>
           <li><a href="https://wa.me/244923579737" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
-          <li><a href="https://www.facebook.com/share/19PNBQKD8v/?mibextid=wwXIfr" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+          <li><a href="contacto.html#mapa"><i class="fa-solid fa-location-dot"></i> Rua Ho Chi Minh, Faculdade de Ciências Sociais da UAN, Luanda</a></li>
+          <li><a href="contacto.html"><i class="fa-regular fa-clock"></i> Seg.–Sex., 9h00–19h00</a></li>
         </ul>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© <span id="year"></span> Kilunji — Editora e Livraria. Maianga, Luanda.</span>
-      <span>Feito com atenção, para quem lê.</span>
+      <span>© <span data-year>2026</span> Kilunji Editora. Todos os direitos reservados.</span>
+      <span>Lendo com alma.</span>
     </div>
   </div>
 </footer>
+
+<a class="wa-float" href="https://wa.me/244923579737" target="_blank" rel="noopener" aria-label="Falar connosco pelo WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
 <script src="assets/js/main.js" defer></script>
 </body>
