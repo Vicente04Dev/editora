@@ -116,6 +116,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .nav-links a.active, .sub-toggle.active{color:var(--wine); border-color:var(--wine); font-weight:600;}
 
 .sub-toggle{background:none; border-top:none; border-left:none; border-right:none; cursor:pointer; display:inline-flex; align-items:center; gap:6px;}
+.has-sub{display:flex; align-items:center; gap:3px;}
+.has-sub .sub-toggle{padding:6px 3px; border-bottom:2px solid transparent; color:var(--ink-mute);}
+.has-sub .sub-toggle:hover{border-color:transparent;}
 .sub-toggle i{font-size:0.65rem; transition:transform .2s ease;}
 .has-sub.open .sub-toggle i{transform:rotate(180deg);}
 .sub-menu{
@@ -164,6 +167,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .nav-links.open{max-height:calc(100vh - var(--header-h));}
   .nav-links > li > a, .sub-toggle{display:flex; width:100%; padding:14px 28px; border-bottom:1px solid var(--line); font-size:1rem;}
   .nav-links > li > a.active{border-bottom-color:var(--line); background:var(--paper-deep);}
+  .has-sub{display:block;}
+  .has-sub .sub-toggle{display:none;}
   .sub-toggle{justify-content:space-between; pointer-events:none;}
   .sub-toggle i{display:none;}
   .sub-toggle.active{border-bottom-color:var(--line);}
@@ -332,7 +337,15 @@ section.tight{padding:64px 0;}
 .svc ul{margin:0; padding:0; list-style:none;}
 .svc li{margin-bottom:9px; padding-left:24px; position:relative; color:var(--on-dark);}
 .svc li::before{content:"—"; position:absolute; left:0; color:var(--gold);}
+.svc-wide{
+  grid-column:1 / -1; border-right:none !important;
+  display:flex; justify-content:space-between; align-items:center; gap:32px; flex-wrap:wrap;
+  background:linear-gradient(135deg, rgba(124,43,35,0.55), rgba(92,31,25,0.25));
+}
+.svc-wide .svc-text{color:var(--on-dark); margin-bottom:14px; max-width:62ch;}
+.svc-wide .btn-actions{margin-top:0;}
 @media (max-width:780px){
+  .svc-wide{padding:28px 20px !important;}
   .svc-grid{grid-template-columns:1fr;}
   .svc:nth-child(odd){border-right:none;}
   .svc{padding:28px 0;}

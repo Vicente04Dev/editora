@@ -44,11 +44,17 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active" aria-current="page">Início</a></li>
       <li><a href="sobre.html">Quem Somos</a></li>
-      <li><a href="servicos.html">Serviços</a></li>
+      <li class="has-sub">
+        <a href="servicos.html">Serviços</a>
+        <button type="button" class="sub-toggle" aria-expanded="false" aria-controls="sub-servicos" aria-label="Mostrar submenu de Serviços"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+        <ul class="sub-menu" id="sub-servicos">
+          <li><a href="servicos.html"><i class="fa-solid fa-layer-group" aria-hidden="true"></i><span>Todos os serviços<small>Edição, revisão, design, distribuição…</small></span></a></li>
+          <li><a href="programa-o-livro.html"><i class="fa-solid fa-radio" aria-hidden="true"></i><span>Programa O Livro<small>Quartas, 15h00 · Rádio Essencial 96.1 FM</small></span></a></li>
+        </ul>
+      </li>
       <li><a href="autores.html">Autores</a></li>
       <li><a href="lancamentos.html">Lançamentos</a></li>
       <li><a href="livrarias.html">Pontos de Venda</a></li>
-      <li><a href="programa-o-livro.html">Programa O Livro</a></li>
       <li><a href="revista.html">Revista Científica</a></li>
       <li><a href="contacto.html">Contactos</a></li>
       <li class="mobile-cta"><a href="submeter-livro.html"><i class="fa-solid fa-feather-pointer" aria-hidden="true"></i> Publicar o meu livro</a></li>
@@ -163,6 +169,7 @@
         <a href="servicos.html#bibliotecas"><i class="fa-solid fa-building-columns" aria-hidden="true"></i><b>Bibliotecas e Livrarias</b><span>Apetrechamento e decoração, físicas e digitais.</span></a>
         <a href="servicos.html#distribuicao"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i><b>Venda e Distribuição</b><span>Livros e revistas distribuídos em todo o país.</span></a>
       </div>
+      <p class="divider-note"><i class="fa-solid fa-radio" aria-hidden="true" style="color:var(--bronze);"></i> E ainda o <a href="programa-o-livro.html">Programa O Livro</a> — todas as quartas-feiras, das 15h00 às 16h00, na Rádio Essencial 96.1 FM.</p>
     </div>
   </section>
 
@@ -197,7 +204,7 @@
   <section class="radio-band">
     <div class="wrap radio-grid">
       <div>
-        <span class="kicker">programa O Livro · Rádio Essencial 96.1 FM</span>
+        <span class="kicker">serviço Kilunji · programa O Livro</span>
         <h2 style="font-size:clamp(1.8rem,3vw,2.5rem); margin-top:6px;">Todas as quartas-feiras, os livros ganham voz.</h2>
         <p style="margin-top:16px; font-size:1.06rem; max-width:52ch;"><b>O Livro</b> é o programa de rádio da Kilunji dedicado ao universo da leitura. Vai para o ar todas as quartas-feiras, das 15h00 às 16h00, na Rádio Essencial 96.1 FM. Em cada emissão, conversamos com autores, leitores e especialistas sobre as obras que nos inspiram e sobre o papel do livro no desenvolvimento de Angola.</p>
         <div class="hero-actions">
@@ -345,6 +352,7 @@
         <ul>
           <li><a href="sobre.html">Quem Somos</a></li>
           <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="programa-o-livro.html">Programa O Livro</a></li>
           <li><a href="autores.html">Autores</a></li>
           <li><a href="revista.html">Revista Científica</a></li>
           <li><a href="submeter-livro.html">Submeter manuscrito</a></li>
@@ -356,7 +364,6 @@
           <li><a href="lancamentos.html">Lançamentos</a></li>
           <li><a href="catalogo.html">Catálogo</a></li>
           <li><a href="livrarias.html">Livrarias e pontos de venda</a></li>
-          <li><a href="programa-o-livro.html">Programa O Livro</a></li>
         </ul>
       </div>
       <div>
