@@ -87,11 +87,28 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .brand-text b{font-family:'Fraunces', serif; font-weight:600; font-size:1.45rem; letter-spacing:0.2px; color:var(--ink);}
 .brand-text small{font-size:0.66rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--bronze-deep); margin-top:4px; font-weight:600;}
 
-.nav-links{display:flex; align-items:center; gap:18px; list-style:none; margin:0; padding:0;}
+/* Barra superior (contactos + botão principal) */
+.topbar{background:var(--ink); color:#cabfae; font-size:0.84rem;}
+.topbar-inner{max-width:var(--max); margin:0 auto; padding:7px 28px; display:flex; justify-content:space-between; align-items:center; gap:20px;}
+.topbar-info{display:flex; gap:22px; align-items:center; flex-wrap:wrap;}
+.topbar-info a, .topbar-info span{color:#cabfae; text-decoration:none; display:inline-flex; align-items:center; gap:7px;}
+.topbar-info i{color:var(--gold);}
+.topbar-info a:hover{color:var(--paper);}
+.topbar-actions{display:flex; gap:14px; align-items:center;}
+.topbar-actions > a:not(.topbar-cta){color:#cabfae; font-size:0.95rem;}
+.topbar-actions > a:not(.topbar-cta):hover{color:var(--gold);}
+.topbar-cta{
+  display:inline-flex; align-items:center; gap:8px; background:var(--wine); color:#f6ede1; text-decoration:none;
+  padding:6px 14px; border-radius:3px; font-weight:600; white-space:nowrap;
+}
+.topbar-cta:hover, .topbar-cta.active{background:var(--gold); color:var(--ink);}
+@media (max-width:1230px){ .topbar{display:none;} }
+
+.nav-links{display:flex; align-items:center; gap:12px; list-style:none; margin:0; padding:0;}
 .nav-links > li{position:relative;}
 .nav-links > li > a, .sub-toggle{white-space:nowrap;}
 .nav-links a, .sub-toggle{
-  text-decoration:none; font-size:0.92rem; font-weight:500; color:var(--ink-soft);
+  text-decoration:none; font-size:0.86rem; font-weight:500; color:var(--ink-soft);
   padding:6px 1px; border-bottom:2px solid transparent;
   font-family:'Libre Franklin', sans-serif;
 }
@@ -111,7 +128,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 .sub-menu::before{content:""; position:absolute; top:-14px; left:0; right:0; height:14px;}
 .has-sub.open .sub-menu{opacity:1; visibility:visible; transform:none;}
-@media (hover:hover) and (min-width:1081px){
+@media (hover:hover) and (min-width:1231px){
   .has-sub:hover .sub-menu{opacity:1; visibility:visible; transform:none;}
 }
 .sub-menu a{
@@ -134,7 +151,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .burger{display:none; background:none; border:none; cursor:pointer; padding:8px; font-size:1.4rem; color:var(--ink);}
 .nav-links .mobile-cta{display:none;}
 
-@media (max-width:1080px){
+@media (max-width:1230px){
   .nav-links{
     position:fixed; top:var(--header-h); left:0; right:0;
     background:var(--paper);
